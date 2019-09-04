@@ -25,4 +25,5 @@ bys i : gen j = _n
 
 replace v = ustrregexra(v,`"<td>|</td>|<tr>|</tr>|<td class="O3_8h_dn">"',"")
 reshape wide v , i(i) j(j)
+destring _all , replace
 compress
