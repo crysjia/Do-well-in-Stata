@@ -4,8 +4,8 @@ use "pm25_beijing.dta" , clear
 format %50s v
 drop in 1/315
 drop in 179/201
-gen i = floor((_n-1)/15)  // 能用缩写就用缩写
-bysort i : gen j = _n
+gen i = floor((_n-1)/15)  
+bys i : gen j = _n
 reshape wide v , i(i) j(j)
 compress
 
@@ -20,8 +20,8 @@ foreach var of varlist _all {
 format %50s v
 drop in 1/315
 drop in 179/201
-gen i = floor((_n-1)/15)  // 能用缩写就用缩写
-bysort i : gen j = _n
+gen i = floor((_n-1)/15) 
+bys i : gen j = _n
 
 replace v = ustrregexra(v,`"<td>|</td>|<tr>|</tr>|<td class="O3_8h_dn">"',"")
 reshape wide v , i(i) j(j)
