@@ -1,6 +1,6 @@
 use "pm25_beijing.dta" , clear
 
-* 我做的 * 这里用 replace 的方法
+* 这里用 replace 的方法
 format %50s v
 drop in 1/315
 drop in 179/201
@@ -16,7 +16,7 @@ foreach var of varlist _all {
 	destring `var' , replace
 }
 
-* 我做的 * 这里用正则表达式的方法
+* 这里用正则表达式的方法
 format %50s v
 drop in 1/315
 drop in 179/201
