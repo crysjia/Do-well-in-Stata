@@ -49,11 +49,10 @@ Stata的正则表达式功能在string function里面，每次用的时候在hel
 
 ![](../../img/help_reg3.png)
 
-**正则表达式的教程参考这个：**https://deerchao.net/tutorials/regex/regex.htm
+正则表达式的教程参考这个：https://deerchao.net/tutorials/regex/regex.htm
+这个是正则表达式的测试工具（用来看你的表达式写的正不正确）：http://tool.chinaz.com/regex/
 
-**这个是正则表达式的测试工具（用来看你的表达式写的正不正确）：**http://tool.chinaz.com/regex/
-
-所以这次的任务是，利用正则表达式来提取网页源代码的信息。这是全国各个城市PM2.5检测数据的目录页（http://www.pm25.in/），我们要从他的源代码中提取城市名称和超链接的网址（在浏览器右键检查就可以查看网页源代码）：
+所以这次的任务是，利用正则表达式来提取网页源代码的信息。这是全国各个城市PM2.5检测数据的![目录页](http://www.pm25.in/)，我们要从他的源代码中提取城市名称和超链接的网址（在浏览器右键检查就可以查看网页源代码）：
 
 ![](../../img/p2_reg1.png)
 
