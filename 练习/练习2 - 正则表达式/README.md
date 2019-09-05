@@ -28,7 +28,7 @@ foreach var of varlist _all {
 
 另一种方法就是在reshape之前就利用正则表达式将这些标记去掉，代码就可以精简很多：
 
-```
+```Stata
 replace v = ustrregexra(v,`"<td>|</td>|<tr>|</tr>|<td class="O3_8h_dn">"',"")
 reshape wide v , i(i) j(j)
 ```
